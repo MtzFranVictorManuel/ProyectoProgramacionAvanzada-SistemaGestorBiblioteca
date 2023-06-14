@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="proyectoconstruccionbiblioteca.controllers.RegistrarEntradaController">
+  <children>
+    <Pane layoutX="0.0" layoutY="29.0" prefHeight="357.0" prefWidth="600.0000999999975">
+      <children>
+        <TextField id="tfNombre" layoutX="40.0" layoutY="138.0" prefHeight="33.000099999997474" prefWidth="177.0" promptText="Matricula" text="" />
+        <Button layoutX="429.0" layoutY="277.0" mnemonicParsing="false" onAction="#btEntrar" prefHeight="33.0" prefWidth="108.0" text="Entrar" />
+        <Label id="lbErrorDar" layoutX="40.0" layoutY="172.0" minHeight="14.9609375" prefHeight="19.9609375" prefWidth="176.9998779296875" text="" />
+        <Label id="lbErrorDar" layoutX="40.0" layoutY="84.0" minHeight="14.9609375" prefHeight="19.9609375" prefWidth="176.9998779296875" text="" />
+        <ComboBox id="cbAreaAvisitar" layoutX="57.0" layoutY="50.0" prefHeight="33.000091552734375" prefWidth="135.9998779296875" promptText="Selecciona un área">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Item 1" />
+              <String fx:value="Item 2" />
+              <String fx:value="Item 3" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+        <Label layoutX="14.0" layoutY="-16.0" prefHeight="33.0" prefWidth="185.0" text="Registrar entrada">
+          <font>
+            <Font size="20.0" />
+          </font>
+        </Label>
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>

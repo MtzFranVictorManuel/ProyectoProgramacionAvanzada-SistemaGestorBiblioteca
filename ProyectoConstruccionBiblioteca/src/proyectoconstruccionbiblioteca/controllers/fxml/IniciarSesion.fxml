@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="389.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proyectoconstruccionbiblioteca.controllers.IniciarSesionController">
+  <children>
+    <TextField id="lbMatriculaNumeroPersonal" fx:id="tfNumeroPersonal" layoutX="94.0" layoutY="212.0" prefWidth="200.0" />
+    <Label layoutX="94.0" layoutY="190.0" prefHeight="22.0" prefWidth="186.0" text="Numero de personal" />
+    <Label layoutX="94.0" layoutY="267.0" prefHeight="22.0" prefWidth="81.0" text="Contraseña" />
+    <ImageView fitHeight="106.0" fitWidth="114.0" layoutX="141.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../../img/book_icon.png" />
+      </image>
+    </ImageView>
+    <Button layoutX="163.0" layoutY="334.0" mnemonicParsing="false" onAction="#clicEntrar" text="Entrar" />
+    <PasswordField id="tf" fx:id="pfContrasena" layoutX="94.0" layoutY="289.0" prefWidth="200.0" />
+    <Label id="lbErrorMatriculaNoPersonal" fx:id="lbErrorNoPersonal" layoutX="95.0" layoutY="234.0" prefHeight="20.0" prefWidth="200.0" text="" />
+    <Label id="lbErrorContraseña" fx:id="lbErrorContraseña" layoutX="94.0" layoutY="314.0" prefHeight="20.0" prefWidth="200.0" text="" />
+  </children>
+</AnchorPane>

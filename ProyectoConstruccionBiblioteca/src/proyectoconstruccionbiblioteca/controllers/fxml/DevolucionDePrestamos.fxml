@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="556.0" prefWidth="1003.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proyectoconstruccionbiblioteca.controllers.DevolucionDePrestamosController">
+   <children>
+      <Button alignment="CENTER_RIGHT" layoutX="40.0" layoutY="180.0" mnemonicParsing="false" onAction="#clicLimpiarTodo" prefHeight="30.0" prefWidth="125.0" style="-fx-border-color: #FF5654;" text="Limpiar Todo">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button alignment="BOTTOM_RIGHT" layoutX="406.0" layoutY="83.0" mnemonicParsing="false" onAction="#clicBuscarUsuario" prefHeight="26.0" prefWidth="86.0" style="-fx-border-color: Transparent;" text="Buscar" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="21.0" layoutY="26.0" text="Modulo de Circulación - Devolución de Préstamos">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="370.0" layoutY="196.0" text="Ingrese el código del recurso documental a devolver:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfBuscarPrestamo" disable="true" layoutX="730.0" layoutY="188.0" prefHeight="26.0" prefWidth="246.0" promptText="código de barras" style="-fx-border-color: Green;">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <TableView fx:id="tbPrestamosUsuario" layoutX="22.0" layoutY="237.0" prefHeight="200.0" prefWidth="957.0">
+        <columns>
+          <TableColumn fx:id="colTitulo" prefWidth="186.0" text="Titulo" />
+          <TableColumn fx:id="colAutor" prefWidth="197.0" text="Autor" />
+            <TableColumn fx:id="colFechaPrestamo" prefWidth="152.0" text="Se prestó el dia:" />
+            <TableColumn fx:id="colFechaVencimiento" minWidth="0.0" prefWidth="157.0" text="Vence el dia:" />
+            <TableColumn fx:id="colEstado" prefWidth="143.0" text="Estado" />
+            <TableColumn fx:id="colRenovaRest" prefWidth="121.0" text="Renovaciones Rest." />
+        </columns>
+      </TableView>
+      <Button layoutX="759.0" layoutY="498.0" mnemonicParsing="false" onAction="#clicRenovar" prefHeight="31.0" prefWidth="98.0" text="Renovar">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="878.0" layoutY="498.0" mnemonicParsing="false" onAction="#clicDevolver" prefHeight="25.0" prefWidth="98.0" text="Devolver">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="txtAviso" alignment="CENTER_RIGHT" layoutX="472.0" layoutY="455.0" prefHeight="21.0" prefWidth="504.0" textFill="#9a0505">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="22.0" layoutY="498.0" mnemonicParsing="false" onAction="#clicSalir" prefHeight="31.0" prefWidth="98.0" text="Salir">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <ImageView disable="true" fitHeight="28.0" fitWidth="26.0" focusTraversable="true" layoutX="409.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/icono_lupa.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="40.0" layoutY="86.0" text="Buscar Usuario:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfBuscarUsuario" layoutX="160.0" layoutY="80.0" prefHeight="39.0" prefWidth="235.0" promptText="matricula / número de personal">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label fx:id="lbNombreUsuario" layoutX="254.0" layoutY="142.0" prefHeight="26.0" prefWidth="572.0" text="* Ingrese el identificador del usuario *">
+         <font>
+            <Font name="System Italic" size="17.0" />
+         </font>
+      </Label>
+      <ImageView disable="true" fitHeight="17.0" fitWidth="20.0" layoutX="47.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/icono_x.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="40.0" layoutY="142.0" prefHeight="26.0" prefWidth="228.0" text="Devolviendo préstamos de: ">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
